@@ -24,21 +24,20 @@
 					</div>
 					<div class="text-light footer__cta_content">
 						<span>Contact me</span>
-						<h2 class="mb-0">Let’s Start a Project</h2>
+						<h2 class="mb-0">Need more info?</h2>
 					</div>
 					<div class="footer__cta_action">
-						<a class="btn btn-light btn-zoom" href="{{ .Site.Params.contactLink | absURL }}">Get in
-							touch</a>
+						<a class="btn btn-light btn-zoom" href="{{ .Site.Params.contactLink | absURL }}">Ask a question</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row footer__widget">
-			<div class="col-lg-4">
+			<!--<div class="col-lg-4">
 				<div class="footer__widget_logo mb-5">
 					<img src="{{ .Site.Params.footerLogo | absURL }}" alt="widget-logo">
 				</div>
-			</div>
+            </div>-->
 			<div class="col-lg-4">
 				<div class="text-light footer__widget_sitemap mb-5">
 					<h4 class="base-font">Sitemap</h4>
@@ -52,11 +51,11 @@
 			</div>
 			<div class="col-lg-4">
 				<div class="text-light footer__widget_address mb-5">
-					<h4 class="base-font">Address</h4>
+					<h4 class="base-font">Coordinates</h4>
 					{{ $address := .Site.Params.address }}
 					<ul class="fa-ul small">
-						<li class="mb-2"><a class="text-light" href="tel:{{ $address.phone }}"><span class="fa-li"><i
-										class="fa fa-phone"></i></span>{{ $address.phone }}</a></li>
+						<!--<li class="mb-2"><a class="text-light" href="tel:{{ $address.phone }}"><span class="fa-li"><i
+                            class="fa fa-phone"></i></span>{{ $address.phone }}</a></li>-->
 						<li class="mb-2"><a class="text-light" href="mailto:{{ $address.email }}"><span class="fa-li"><i
 										class="fa fa-envelope"></i></span>{{ $address.email }}</a></li>
 						<li class="mb-2">
@@ -69,7 +68,7 @@
 		<div class="row footer__footer">
 			<div class="col-lg-6">
 				<div class="footer__footer_copy text-light">
-					<p>{{ .Site.Params.copyright }}</p>
+                    <p><a href="https://themes.gohugo.io/themes/portio-hugo/">{{ .Site.Params.copyright }}</a></p>
 				</div>
 			</div>
 			<div class="col-lg-6">
